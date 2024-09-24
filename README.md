@@ -57,31 +57,23 @@ The Test Plan is designed to describe all details of testing for all the modules
 <h5> Tests in scope: </h5>
 
 <ul>
-  <li>Verify that the client can't create an account if is not using values for the mandatory fields </li> 
-  <li>Verify that a client can create a new account using only mandatory fields</li>
-  <li>Verify the warning message if the client wants to create an account using an invalid password</li>
-  <li>Verify that the mandatory GDPR checkbox works if you click on it and check the default value</li>
-  <li>Verify that the user can't create an account if mandatory fields are empty</li>
-  <li>Verify that an client can remove an item from the "Coș"</li>
-  <li>Verify that an user can add items in wish list</li>
-  <li>Verify that the user can add all of the items from the wish list to his shopping cart</li>
-  <li>Verify if a client is able to add items in the cart if is not logged in</li>
-  <li>Verify if a user can remove an item from the wish list</li>
-  <li>Verify if a user can move products to a non-existent wish list</li>
+  <li>All the features of CRUD operations story via UI of the dedeman platform, and the account creation will be tested using functional testing and UI testing.</li> 
+  <li>To ensure that a new client can successufully register, and complete a purchase </li>
+  <li>To ensure the compatibility with the latest Firefox, Chrome or other browser platform</li>
 </ul>
 
 <h4>1.1.5 Risks detected</h4>
 <h5>Project risks:</h5>
-<ul>
-  <li>Minor/critical software defects can lead to customer dissatisfaction, delays in the delivery of more stable versions, or even the loss of major customers </li> 
+<ul> 
   <li>Inefficient management of resources, the budget allocated to the project is not well divided, and the time allocated to the project is not well structured so that we can be as productive as possible</li>
-  <li>Compatibility issues between the different devices from which the Dedeman platform is accessed.</li>
 </ul>
 
 <h5> Product risks: </h5>
 <ul>
+  <li>Minor/critical software defects can lead to customer dissatisfaction, delays in the delivery of more stable versions, or even the loss of major customers </li>
   <li>Product/site performance – when many hits are made to the site, the product may not perform as expected (high response time) </li> 
   <li>Product security – customers can have their data stolen/lost when purchasing products.</li>
+  <li>Compatibility issues between the different devices from which the Dedeman platform is accessed.</li>
 </ul>
 
 <h3>1.2 Test Monitoring and Control</h3>
@@ -99,20 +91,18 @@ The testing process will be executed based on the application requirements. The 
 <h3>1.4 Test Design</h3>
 Functional test cases were created in Zephyr Squad based on the analysis of the specifications. 
 
-1. For PTNV-2 story a Test Case looks like [here](/PTNV-2%20test%20case.pdf)
+1. For PTNV-2 story a Test Case looks like [here](/CRUD%20operations.pdf)
 
-2. For PTNV-3 story a Test Case looks like [here](/PTNV-3%20test%20case.pdf)
+2. For PTNV-3 story a Test Case looks like [here](/Account%20creation.pdf)
+
+And the execution of the entire set of tests can be analyzed [here](/test%20execution.html)
 
 <h3>1.5. Test Execution </h3>
 Test cases are executed on the created test Cycle summary.
 
 ![(Test Execution Chart.png)](/Test%20Execution%20Chart.png)
 
-Bugs have been created based on the failed tests. The complete bug reports can be found here: 
-
-The following is a summary of the bugs that have been found
-
-![(Bug.png)](/Bug.png)
+In the QA process it was discovered a bug. For this issue, the following ticket was raised [here](/reported%20bug.pdf)
 
 <h3>1.6. Test Completion </h3>
 The traceability report was generated using Jira tool. We can the following reports below:

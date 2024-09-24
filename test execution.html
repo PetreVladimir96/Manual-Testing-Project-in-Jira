@@ -1,0 +1,800 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>ZFJ - Html Report for Executions</title>
+        <script type="text/javascript">
+        function altRows ( id ) {
+            if ( document.getElementsByTagName ) {
+                var table = document.getElementById ( id ) ;
+                var rows = table.getElementsByTagName ( "tr" ) ;
+                for ( i = 0 ; i < rows.length ; i ++ ) {
+                    if ( i % 2 == 0 ) {
+                        rows[ i ].className = "evenrowcolor" ;
+                    } else {
+                        rows[ i ].className = "oddrowcolor" ;
+                    }
+                }
+            }
+        }
+        window.onload = function ( ) {
+            altRows ( 'alternatecolor' ) ;
+        }
+        </script>
+        <style type="text/css">
+        table.altrowstable {
+            font-family : verdana, arial, sans-serif ;
+            font-size : 9px ;
+            padding-left : 50px ;
+            color : #333333 ;
+            border-width : 1px ;
+            border-color : #a9c6c9 ;
+            border-collapse : collapse ;
+        }
+        table.altrowstable th {
+            border-width : 1px ;
+            padding : 8px ;
+            border-style : solid ;
+            border-color : #a9c6c9 ;
+        }
+        table.altrowstable thead {
+            font-weight : bold ;
+        }
+        table.altrowstable td {
+            border-width : 1px ;
+            padding : 8px ;
+            border-style : solid ;
+            border-color : #a9c6c9 ;
+        }
+        .oddrowcolor {
+            background-color : #d4e3e5 ;
+        }
+        .evenrowcolor {
+            background-color : none ;
+        }
+        </style>
+    </head>
+    <body>
+
+        <table class="altrowstable" id="alternatecolor" border="1" cellspacing="0" cellpadding="0" style="padding-left : 50 px ; overflow-y = scroll ;">
+            <thead>
+                <th>ExecutionId</th>
+                <th>Cycle</th>
+                <th>Folder Name</th>
+                <th>Issue Key</th>
+                <th>Test Summary</th>
+                <th>Project</th>
+                <th>Component</th>
+                <th>Version</th>
+                <th>Priority</th>
+                <th>Executed By</th>
+                <th>Executed On</th>
+                <th>Execution Status</th>
+                <th>Execution Defect(s)</th>
+                <th>Creation Date</th>
+                <th>Assigned To</th>
+                <th>Execution Custom Field</th>
+                <th>Work Flow Status</th>
+                <th>Total Execution Time</th>
+                <th>Total Logged Time</th>
+                <th>StepId</th>
+                <th>OrderId</th>
+                <th>Step</th>
+                <th>Test Data</th>
+                <th>Expected Result</th>
+                <th>Step Result</th>
+                <th>Comment</th>
+                <th>Test Step Custom Field</th>
+            </thead>
+            <tbody>
+            
+                
+                    <tr>
+                        <td rowspan="2">c7d04157-432b-40d6-878b-3614c376b718</td>
+                        <td rowspan="2">Test_Cycle_Dedeman</td>
+                        <td rowspan="2"></td>
+                        <td rowspan="2">PTNV-4</td>
+                        <td rowspan="2">Verify that the client can&#x27;t create an account if is not using values for the mandatory fields</td>
+                        <td rowspan="2">Petre_Tupangiu_Nicolae_Vladimir_ST1</td>
+                        <td rowspan="2"></td>
+                        <td rowspan="2">TestProoject v1.0</td>
+                        <td rowspan="2">Medium</td>
+                        <td rowspan="2">IT Factory</td>
+                        <td rowspan="2">06/Sep/24 06:57 PM</td>
+                        <td rowspan="2">PASS</td>
+                        <td rowspan="2"></td>
+                        <td rowspan="2">06/Sep/24 05:18 PM</td>
+                        <td rowspan="2"></td>
+                        <td rowspan="2"></td>
+                        <td rowspan="2"></td>
+                        <td rowspan="2"></td>
+                        <td rowspan="2"></td>
+                        
+                            <td>c0e7d9d3-7394-44a9-9ba1-f3849b36a985</td>
+                            <td>1</td>
+                            <td><p>Don't text anything on the following fields:</br>- email address</br>- password</br>- repeat password</br>- name and surname</p></td>
+                            <td></td>
+                            <td><p>The mandatory fields should be left empty</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        
+                    </tr>
+                    
+                        <tr>
+                            <td>4fdeca06-7fc1-4cf6-a498-a5a5595aa753</td>
+                            <td>2</td>
+                            <td><p>Click on the "Inregistreaza-te" button</p></td>
+                            <td></td>
+                            <td><p>Warning messages should be displayed with "Acesta este un câmp obligatoriu." values on them</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                
+            
+                
+                    <tr>
+                        <td rowspan="4">075ac230-c228-4076-a452-8b0859ca5a3e</td>
+                        <td rowspan="4">Test_Cycle_Dedeman</td>
+                        <td rowspan="4"></td>
+                        <td rowspan="4">PTNV-5</td>
+                        <td rowspan="4">Verify that an client can remove an item from the &quot;Coș&quot;</td>
+                        <td rowspan="4">Petre_Tupangiu_Nicolae_Vladimir_ST1</td>
+                        <td rowspan="4"></td>
+                        <td rowspan="4">TestProoject v1.0</td>
+                        <td rowspan="4">Medium</td>
+                        <td rowspan="4">IT Factory</td>
+                        <td rowspan="4">06/Sep/24 06:57 PM</td>
+                        <td rowspan="4">PASS</td>
+                        <td rowspan="4"></td>
+                        <td rowspan="4">06/Sep/24 05:18 PM</td>
+                        <td rowspan="4"></td>
+                        <td rowspan="4"></td>
+                        <td rowspan="4"></td>
+                        <td rowspan="4"></td>
+                        <td rowspan="4"></td>
+                        
+                            <td>496a1754-0df9-41ce-98fe-f06cad1aba92</td>
+                            <td>1</td>
+                            <td><p>Click on the "Cos" button </p></td>
+                            <td></td>
+                            <td><p>Button should be enabled, and visible. If the user click on a window should appear after</p></td>
+                            <td>PASS</td>
+                            <td></td>
+                            <td></td>
+                        
+                    </tr>
+                    
+                        <tr>
+                            <td>9ef6453c-f559-4622-ab48-7ea9a8b2c53b</td>
+                            <td>2</td>
+                            <td><p>Click on the "Vezi detalii cos" button</p></td>
+                            <td></td>
+                            <td><p>Button should be enabled, and visible. After clicking on it, the user should be redirected on his cart page</p></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>6b54009d-d2cf-4da1-8308-b120f9baeb28</td>
+                            <td>3</td>
+                            <td><p>See the list of products from the cart</p></td>
+                            <td></td>
+                            <td><p>User should be able to see a list of products on his cart</p></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>f5ab8f89-b837-45cf-91fc-c0b422933831</td>
+                            <td>4</td>
+                            <td><p>Select a product and click on the "Sterge din cos" button</p></td>
+                            <td></td>
+                            <td><p>If the user click on the "Sterge din cos" button the selected product should be removed from his cart</p></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                
+            
+                
+                    <tr>
+                        <td rowspan="8">f75443bc-b7b3-40ac-a15f-c26fa4090b07</td>
+                        <td rowspan="8">Test_Cycle_Dedeman</td>
+                        <td rowspan="8"></td>
+                        <td rowspan="8">PTNV-6</td>
+                        <td rowspan="8">Verify that a client can create a new account using only mandatory fields</td>
+                        <td rowspan="8">Petre_Tupangiu_Nicolae_Vladimir_ST1</td>
+                        <td rowspan="8"></td>
+                        <td rowspan="8">TestProoject v1.0</td>
+                        <td rowspan="8">Medium</td>
+                        <td rowspan="8">IT Factory</td>
+                        <td rowspan="8">06/Sep/24 06:53 PM</td>
+                        <td rowspan="8">PASS</td>
+                        <td rowspan="8"></td>
+                        <td rowspan="8">06/Sep/24 05:18 PM</td>
+                        <td rowspan="8"></td>
+                        <td rowspan="8"></td>
+                        <td rowspan="8"></td>
+                        <td rowspan="8"></td>
+                        <td rowspan="8"></td>
+                        
+                            <td>6190f5fe-7100-4381-9ea0-ae79de7965a4</td>
+                            <td>1</td>
+                            <td><p>Navigate to “Creaza-ti un cont”</p></td>
+                            <td></td>
+                            <td><p>The "Vreau un cont nou" page is loaded and the form elements are visible.</p></td>
+                            <td>PASS</td>
+                            <td></td>
+                            <td></td>
+                        
+                    </tr>
+                    
+                        <tr>
+                            <td>140048cc-943c-419f-8b66-be6547e87f13</td>
+                            <td>2</td>
+                            <td><p>Fill in a valid value in the "Nume si prenume" text-box</p></td>
+                            <td><p>Popescu Georgescu</p></td>
+                            <td><p>The text box is enabled and the inserted value is correctly displayed</p></td>
+                            <td>PASS</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>4ce77e08-ec9a-4e5d-bb4c-5598cb4aa208</td>
+                            <td>3</td>
+                            <td><p>Fill in a valid email address in the "Adresa de email" text-box</p></td>
+                            <td><p>test@yahoo.com</p></td>
+                            <td><p>The text box is enabled and the inserted value is correctly displayed</p></td>
+                            <td>PASS</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>86efb1b0-99fb-459f-8af2-b1a08ba72103</td>
+                            <td>4</td>
+                            <td><p>Fill in the "Parola" text-box with a valid data</p></td>
+                            <td><p>Test1234*1234</p></td>
+                            <td><p>The text box is enabled and the inserted value is correctly displayed</p></td>
+                            <td>PASS</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>7936b22e-2927-44d2-94eb-2a53d6e19e5f</td>
+                            <td>5</td>
+                            <td><p>Fill in the "Repeta parola" text-box with the exact same data from "Parola" text-box</p></td>
+                            <td><p>Test1234*1234</p></td>
+                            <td><p>The text box is enabled and the inserted value is correctly displayed</p></td>
+                            <td>PASS</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>381c8237-7ee7-49dd-9f10-bc46da30078d</td>
+                            <td>6</td>
+                            <td><p>Check the "Am peste 16 ani și sunt de acord cu prelucrarea datelor în conformitate cu politica de confidențialitate și securitate a datelor cu caracter personal implementată de DEDEMAN." checkbox</p></td>
+                            <td></td>
+                            <td><p>Checkbox is enabled</p></td>
+                            <td>PASS</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>d894a0f7-d3dc-4525-a640-58afe2d448cd</td>
+                            <td>7</td>
+                            <td><p>Click on the "Inregistreaza-te" button</p></td>
+                            <td></td>
+                            <td><p>All the fields are validated and the new user is created</p></td>
+                            <td>PASS</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>b2dccec6-0857-4019-b61a-4bcfa98544f2</td>
+                            <td>8</td>
+                            <td><p>Try to log-in with the new created account</p></td>
+                            <td></td>
+                            <td><p>The client should be able to log-in with the new account that is now created</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                
+            
+                
+                    <tr>
+                        <td rowspan="1">4da0434c-7c17-46c4-9ef0-bf1cf4779824</td>
+                        <td rowspan="1">Test_Cycle_Dedeman</td>
+                        <td rowspan="1"></td>
+                        <td rowspan="1">PTNV-7</td>
+                        <td rowspan="1">Verify the warning message if the client wants to create an account using an invalid password</td>
+                        <td rowspan="1">Petre_Tupangiu_Nicolae_Vladimir_ST1</td>
+                        <td rowspan="1"></td>
+                        <td rowspan="1">TestProoject v1.0</td>
+                        <td rowspan="1">Medium</td>
+                        <td rowspan="1">IT Factory</td>
+                        <td rowspan="1">06/Sep/24 06:56 PM</td>
+                        <td rowspan="1">PASS</td>
+                        <td rowspan="1"></td>
+                        <td rowspan="1">06/Sep/24 05:18 PM</td>
+                        <td rowspan="1"></td>
+                        <td rowspan="1"></td>
+                        <td rowspan="1"></td>
+                        <td rowspan="1"></td>
+                        <td rowspan="1"></td>
+                        
+                            <td>d2e4693b-b53b-4e62-b629-ac87fd12d36c</td>
+                            <td>1</td>
+                            <td><p>Fill in the "Parola" field with an invalid value</p></td>
+                            <td><p>test123456</p></td>
+                            <td><p>A warning message should be displayed:</br>"Parola trebuie să aibă cel puțin 8 caractere și să conțină cel puțin o literă mare, o literă mică, o cifră și un caracter special."</p></td>
+                            <td>PASS</td>
+                            <td></td>
+                            <td></td>
+                        
+                    </tr>
+                    
+                
+            
+                
+                    <tr>
+                        <td rowspan="4">eef09545-c186-4593-9571-cb2ded1ee1b9</td>
+                        <td rowspan="4">Test_Cycle_Dedeman</td>
+                        <td rowspan="4"></td>
+                        <td rowspan="4">PTNV-8</td>
+                        <td rowspan="4">Verify that the mandatory GDPR checkbox works if you click on it and check the default value</td>
+                        <td rowspan="4">Petre_Tupangiu_Nicolae_Vladimir_ST1</td>
+                        <td rowspan="4"></td>
+                        <td rowspan="4">TestProoject v1.0</td>
+                        <td rowspan="4">Medium</td>
+                        <td rowspan="4">IT Factory</td>
+                        <td rowspan="4">06/Sep/24 06:57 PM</td>
+                        <td rowspan="4">PASS</td>
+                        <td rowspan="4"></td>
+                        <td rowspan="4">06/Sep/24 05:18 PM</td>
+                        <td rowspan="4"></td>
+                        <td rowspan="4"></td>
+                        <td rowspan="4"></td>
+                        <td rowspan="4"></td>
+                        <td rowspan="4"></td>
+                        
+                            <td>479c602c-2f3d-4821-9989-090313d614b5</td>
+                            <td>1</td>
+                            <td><p>See if there is GDPR checkbox on the bottom of the new account form</p></td>
+                            <td></td>
+                            <td><p>There is a GDPR checkbox on the bottom of the form</p></td>
+                            <td>PASS</td>
+                            <td></td>
+                            <td></td>
+                        
+                    </tr>
+                    
+                        <tr>
+                            <td>257bddb5-ad55-4708-8284-ba88c09c1296</td>
+                            <td>2</td>
+                            <td><p>Check if the GDPR checkbox has a correct text displayed</p></td>
+                            <td></td>
+                            <td><p>"Am peste 16 ani și sunt de acord cu prelucrarea datelor în conformitate cu politica de confidențialitate și securitate a datelor cu caracter personal implementată de DEDEMAN" text should be displayed</p></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>fa81dfdf-f735-4931-b341-ab99964bd1f4</td>
+                            <td>3</td>
+                            <td><p>Check the default value of the checkbox</p></td>
+                            <td></td>
+                            <td><p>Default value is false</p></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>57463eab-fe17-4d9f-9b3d-7846cc6f2cce</td>
+                            <td>4</td>
+                            <td><p>Check if you can change the value of the GDPR checkbox</p></td>
+                            <td></td>
+                            <td><p>Checkbox state should be change after the user interact with it</p></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                
+            
+                
+                    <tr>
+                        <td rowspan="2">3b66d4ec-c62d-4f3e-badb-96fb4b7ce521</td>
+                        <td rowspan="2">Test_Cycle_Dedeman</td>
+                        <td rowspan="2"></td>
+                        <td rowspan="2">PTNV-9</td>
+                        <td rowspan="2">Verify that the user can&#x27;t create an account if mandatory fields are empty</td>
+                        <td rowspan="2">Petre_Tupangiu_Nicolae_Vladimir_ST1</td>
+                        <td rowspan="2"></td>
+                        <td rowspan="2">TestProoject v1.0</td>
+                        <td rowspan="2">Medium</td>
+                        <td rowspan="2">IT Factory</td>
+                        <td rowspan="2">06/Sep/24 06:57 PM</td>
+                        <td rowspan="2">PASS</td>
+                        <td rowspan="2"></td>
+                        <td rowspan="2">06/Sep/24 05:18 PM</td>
+                        <td rowspan="2"></td>
+                        <td rowspan="2"></td>
+                        <td rowspan="2"></td>
+                        <td rowspan="2"></td>
+                        <td rowspan="2"></td>
+                        
+                            <td>5dbb8b44-0311-4f42-8810-07741d7ca00d</td>
+                            <td>1</td>
+                            <td><p>Let the mandatory fields empty </p></td>
+                            <td></td>
+                            <td><p>All the mandatory fields are empty</p></td>
+                            <td>PASS</td>
+                            <td></td>
+                            <td></td>
+                        
+                    </tr>
+                    
+                        <tr>
+                            <td>6e0a78e3-3b7c-4d8a-ae82-ad7316875cf1</td>
+                            <td>2</td>
+                            <td><p>Click on the "Inregistreaza-te" button</p></td>
+                            <td></td>
+                            <td><p>For each mandatory field the user will see a warning message:</br>"Acesta este un câmp obligatoriu."</p></td>
+                            <td>PASS</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                
+            
+                
+                    <tr>
+                        <td rowspan="3">3fcdf0df-452a-41a7-b6ba-1ff42669fbed</td>
+                        <td rowspan="3">Test_Cycle_Dedeman</td>
+                        <td rowspan="3"></td>
+                        <td rowspan="3">PTNV-10</td>
+                        <td rowspan="3">Verify that an user can add items in wish list</td>
+                        <td rowspan="3">Petre_Tupangiu_Nicolae_Vladimir_ST1</td>
+                        <td rowspan="3"></td>
+                        <td rowspan="3">TestProoject v1.0</td>
+                        <td rowspan="3">Medium</td>
+                        <td rowspan="3">IT Factory</td>
+                        <td rowspan="3">06/Sep/24 06:58 PM</td>
+                        <td rowspan="3">PASS</td>
+                        <td rowspan="3"></td>
+                        <td rowspan="3">06/Sep/24 05:18 PM</td>
+                        <td rowspan="3"></td>
+                        <td rowspan="3"></td>
+                        <td rowspan="3"></td>
+                        <td rowspan="3"></td>
+                        <td rowspan="3"></td>
+                        
+                            <td>62f70f91-f193-4125-8692-505b0fb8afed</td>
+                            <td>1</td>
+                            <td><p>Search for an article of furniture</p></td>
+                            <td></td>
+                            <td><p>User should find an article of furniture</p></td>
+                            <td>PASS</td>
+                            <td></td>
+                            <td></td>
+                        
+                    </tr>
+                    
+                        <tr>
+                            <td>43398d99-dc36-4840-8b4f-e46677f4c621</td>
+                            <td>2</td>
+                            <td><p>Click on the "Heart" shape button to add the item in your wish list</p></td>
+                            <td></td>
+                            <td><p>You should be redirected to your wish list page</p></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>bca2aca1-2343-4980-9b4c-df167a289427</td>
+                            <td>3</td>
+                            <td><p>Search for the selected article in your wish list</p></td>
+                            <td></td>
+                            <td><p>The item selected should be displayed in the wish list</p></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                
+            
+                
+                    <tr>
+                        <td rowspan="5">92dea7b3-cf98-41c0-b055-7c960293a480</td>
+                        <td rowspan="5">Test_Cycle_Dedeman</td>
+                        <td rowspan="5"></td>
+                        <td rowspan="5">PTNV-11</td>
+                        <td rowspan="5">Verify that the user can add all of the items from the wish list to his shopping cart</td>
+                        <td rowspan="5">Petre_Tupangiu_Nicolae_Vladimir_ST1</td>
+                        <td rowspan="5"></td>
+                        <td rowspan="5">TestProoject v1.0</td>
+                        <td rowspan="5">Medium</td>
+                        <td rowspan="5">IT Factory</td>
+                        <td rowspan="5">06/Sep/24 06:57 PM</td>
+                        <td rowspan="5">PASS</td>
+                        <td rowspan="5"></td>
+                        <td rowspan="5">06/Sep/24 05:18 PM</td>
+                        <td rowspan="5"></td>
+                        <td rowspan="5"></td>
+                        <td rowspan="5"></td>
+                        <td rowspan="5"></td>
+                        <td rowspan="5"></td>
+                        
+                            <td>65e79bff-1dcc-4094-8eb1-2f1634c38829</td>
+                            <td>1</td>
+                            <td><p>Click on the "Heart" shape icon from the top of the page</p></td>
+                            <td></td>
+                            <td><p>User should see a "Heart" shape icon that means "Favorite" section</p></td>
+                            <td>PASS</td>
+                            <td></td>
+                            <td></td>
+                        
+                    </tr>
+                    
+                        <tr>
+                            <td>398d5428-7ddb-4d4e-aaf5-dc93219bfe41</td>
+                            <td>2</td>
+                            <td><p>Click on the list from wish lists that has saved items</p></td>
+                            <td></td>
+                            <td><p>User should have one or more wish lists with saved items</p></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>0c1f60c8-843e-430b-b9a8-f38121c86977</td>
+                            <td>3</td>
+                            <td><p>Click the "Adauga in cos" button to add items from your wish list to the shopping cart</p></td>
+                            <td></td>
+                            <td><p>All item selected from the wish list should be transferred to the shopping cart</p></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>1ff1bb44-d1d1-4354-a6df-3e08f9ee0311</td>
+                            <td>4</td>
+                            <td><p>Click on the shopping cart icon</p></td>
+                            <td></td>
+                            <td><p>In the top right side user should see a shopping cart icon</p></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>db903d88-e332-487b-99a6-b6cf42031faa</td>
+                            <td>5</td>
+                            <td><p>See the items that were transferred from the wish list</p></td>
+                            <td></td>
+                            <td><p>User should see a list of items that were in the wish list</p></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                
+            
+                
+                    <tr>
+                        <td rowspan="5">9d521050-2601-413a-9960-e4254a74f5c1</td>
+                        <td rowspan="5">Test_Cycle_Dedeman</td>
+                        <td rowspan="5"></td>
+                        <td rowspan="5">PTNV-13</td>
+                        <td rowspan="5">Verify if a client is able to add items in the cart if is not logged in</td>
+                        <td rowspan="5">Petre_Tupangiu_Nicolae_Vladimir_ST1</td>
+                        <td rowspan="5"></td>
+                        <td rowspan="5">TestProoject v1.0</td>
+                        <td rowspan="5">Medium</td>
+                        <td rowspan="5">IT Factory</td>
+                        <td rowspan="5">12/Sep/24 08:33 PM</td>
+                        <td rowspan="5">PASS</td>
+                        <td rowspan="5"></td>
+                        <td rowspan="5">12/Sep/24 08:33 PM</td>
+                        <td rowspan="5"></td>
+                        <td rowspan="5"></td>
+                        <td rowspan="5"></td>
+                        <td rowspan="5"></td>
+                        <td rowspan="5"></td>
+                        
+                            <td>45626199-9c36-4fc5-a1ef-9ed617ecca5a</td>
+                            <td>1</td>
+                            <td><p>Search for a product</p></td>
+                            <td><p>Search for a "scaun birou"</p></td>
+                            <td><p>Client should see a list of all available searched products</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        
+                    </tr>
+                    
+                        <tr>
+                            <td>5cb71647-b3e1-4f2b-9215-2e2931455af7</td>
+                            <td>2</td>
+                            <td><p>Add selected product to the shopping cart with the "Adauga in cos" button</p></td>
+                            <td></td>
+                            <td><p>Client should be able to add selected products to his shopping cart</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>880dcab8-1a37-4f24-b777-1b17a9e24f5e</td>
+                            <td>3</td>
+                            <td><p>Click on the shopping cart icon from the top right side</p></td>
+                            <td></td>
+                            <td><p>Client should see a list of products, and a "Vezi detalii cos" button</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>74a8e939-753a-4a94-ae2a-4d3ab911460d</td>
+                            <td>4</td>
+                            <td><p>Click on the "Vezi detalii cos" button</p></td>
+                            <td></td>
+                            <td><p>Client should be redirected to his shopping cart</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>29603035-20bd-4729-b6be-5d347c0b187e</td>
+                            <td>5</td>
+                            <td><p>Click on the "Pasul urmator" button from the right side</p></td>
+                            <td></td>
+                            <td><p>Client should be redirected to the log-in page</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                
+            
+                
+                    <tr>
+                        <td rowspan="3">f2e7cabd-c78f-45e4-afe7-3d74e81d0482</td>
+                        <td rowspan="3">Test_Cycle_Dedeman</td>
+                        <td rowspan="3"></td>
+                        <td rowspan="3">PTNV-14</td>
+                        <td rowspan="3">Verify if a user can remove an item from the wish list</td>
+                        <td rowspan="3">Petre_Tupangiu_Nicolae_Vladimir_ST1</td>
+                        <td rowspan="3"></td>
+                        <td rowspan="3">TestProoject v1.0</td>
+                        <td rowspan="3">Medium</td>
+                        <td rowspan="3">IT Factory</td>
+                        <td rowspan="3">12/Sep/24 08:29 PM</td>
+                        <td rowspan="3">PASS</td>
+                        <td rowspan="3"></td>
+                        <td rowspan="3">12/Sep/24 08:14 PM</td>
+                        <td rowspan="3"></td>
+                        <td rowspan="3"></td>
+                        <td rowspan="3"></td>
+                        <td rowspan="3"></td>
+                        <td rowspan="3"></td>
+                        
+                            <td>f93f858c-7a2f-49f2-b1f5-3ebba74907ba</td>
+                            <td>1</td>
+                            <td><p>Click on the "Heart" shape icon from the top of the page</p></td>
+                            <td></td>
+                            <td><p>User should see a "Heart" shape icon that means "Favorite" section</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        
+                    </tr>
+                    
+                        <tr>
+                            <td>550687b6-81b0-4a93-b86b-68306309373e</td>
+                            <td>2</td>
+                            <td><p>Click on the list from wish lists that has saved items</p></td>
+                            <td></td>
+                            <td><p>User should have one or more wish lists with saved items</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>b53993fc-cef9-42a8-a609-e4c1848acbef</td>
+                            <td>3</td>
+                            <td><p>Click the "Sterge din favorite" button from the bottom of "Adauga in cos" button to remove items from the wish list</p></td>
+                            <td></td>
+                            <td><p>Selected items are removed from the wish list</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                
+            
+                
+                    <tr>
+                        <td rowspan="3">bbb77641-50e7-4686-a73b-82216575ecc1</td>
+                        <td rowspan="3">Test_Cycle_Dedeman</td>
+                        <td rowspan="3"></td>
+                        <td rowspan="3">PTNV-15</td>
+                        <td rowspan="3">Verify if a user can move products to a non-existent wish list</td>
+                        <td rowspan="3">Petre_Tupangiu_Nicolae_Vladimir_ST1</td>
+                        <td rowspan="3"></td>
+                        <td rowspan="3">TestProoject v1.0</td>
+                        <td rowspan="3">Medium</td>
+                        <td rowspan="3">IT Factory</td>
+                        <td rowspan="3">12/Sep/24 08:29 PM</td>
+                        <td rowspan="3">FAIL</td>
+                        <td rowspan="3">PTNV-12</td>
+                        <td rowspan="3">12/Sep/24 08:29 PM</td>
+                        <td rowspan="3"></td>
+                        <td rowspan="3"></td>
+                        <td rowspan="3"></td>
+                        <td rowspan="3"></td>
+                        <td rowspan="3"></td>
+                        
+                            <td>b4426d55-9b81-46cd-9328-76e8af389d39</td>
+                            <td>1</td>
+                            <td><p>Click on the "Favorites" button</p></td>
+                            <td></td>
+                            <td><p>User should have the possibility to access the wish list</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        
+                    </tr>
+                    
+                        <tr>
+                            <td>9f990054-cfb4-41c0-97eb-bfaa64a8a0be</td>
+                            <td>2</td>
+                            <td><p>From the list of products, select a product and click on "Move to another list"</p></td>
+                            <td></td>
+                            <td><p>User has the option to move products to another wish list</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>5c3818a9-8ee3-49e8-b8ef-74c4ac2e4e2a</td>
+                            <td>3</td>
+                            <td><p>Without giving values ​​to the mandatory fields, press the "Save" button</p></td>
+                            <td></td>
+                            <td><p>User can't move the products on a non-existent wish list</p></td>
+                            <td>UNEXECUTED</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                
+            
+            </tbody>
+        </table>
+    </body>
+</html>
